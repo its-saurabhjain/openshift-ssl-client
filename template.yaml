@@ -19,7 +19,7 @@ objects:
     runPolicy: Serial
     source:
       git:
-        uri: "https://github.com/domenicbove/openshift-ssl-client"
+        uri: "https://github.com/its-saurabhjain/openshift-ssl-client"
         ref: "master"
     strategy:
       sourceStrategy:
