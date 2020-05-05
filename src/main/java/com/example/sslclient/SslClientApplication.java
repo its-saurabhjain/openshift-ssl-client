@@ -15,8 +15,9 @@ public class SslClientApplication {
 
 	HttpClient client = new HttpClient();
 	GetMethod method = new GetMethod();
+	String uri = "https://localhost:8443/secured";
 	//String uri = "https://ssl-server." + System.getenv("POD_NAMESPACE") + ".svc:8443/secured";
-	String uri = "https://http2server." + System.getenv("POD_NAMESPACE") + ".svc:8443/secured";
+	//String uri = "https://http2server." + System.getenv("POD_NAMESPACE") + ".svc:8443/secured";
 	method.setURI(new URI(uri, false));
 	while(true) {
 	    client.executeMethod(method);
